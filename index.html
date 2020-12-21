@@ -1,6 +1,302 @@
-<!DOCTYPE html><html><head>
-<title>Merhaba</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Templates/navDefault/navMain.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Killian Debacker Portfolio</title>
 </head>
-<body>Merhaba
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h4>Killian Debacker</h4>
+        </div>
+        <ul class="navlinks">
+            <!-- <li><a href="#ye" class="scroll">Home</a></li> -->
+            <li><a href= "#coolprojects" class="scroll">Projects</a></li>
+            <li><a href="#about" class="scroll">Skills</a></li>
+            <li><a href="Pages/Contact/contact" >Contact Me</a></li>
+            <li><a href= "images/Killian Debacker Resume.pdf" target="_blank">Resume</a></li>
+            <div class="download">
+                <a href="images/Killian Debacker Resume.pdf" target="_blank"> <img src="../images/button.png" alt=""></a>
+            </div>
+        </ul>
+        <div class = "navdropdown">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <script src="nav.js"></script>
+    </nav>
+
+    <div class="main" id="setImage">
+            <h1>Killian Debacker</h1>
+            <h2>Full Stack Developer</h2>
+            <br>
+            <ul class="infoLinks">
+                <li>
+                    <a href="https://github.com/Killian264" target="_blank">
+                    <img src="images/GithubImage.png" id="gitHub">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/killian-debacker-95a813165/" target="_blank">
+                    <img src="images/LinkedIn-Logo-500x500.png">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://killiandebacker.com/Pages/Contact/contact" target="_blank">
+                    <img src="images/gmaillogo.png">Gmail</a>
+                </li>
+                <li>
+                    <a href="images/Killian Debacker Resume.pdf" target="_blank"> <img src="images/button.png" alt=""></a>
+                    <a href="images/Killian Debacker Resume.pdf"  target="_blank">Resume</a>
+                </li>
+            </ul>
+            <br>
+    </div>
+    <div class="about" id="coolprojects">
+        <h1 id="heading">Work Experience</h1>  
+        <div class="skills test">
+            <div class="skills-padding ml2">
+                    <a class="skills-image-padding" href="https://www.lmsproject.com/" target="_blank"><img src="images/lms-project-white.png" alt=""></a>
+            </div>
+            <div class="lms-project-info">
+                <h2>LMS Project</h2>
+                <span class="b">June 2020 - Current</span>
+                <br/>
+                <ol class="learned-skills">
+                    <li class="font">(A platform for construction project management, invoicing, budgeting, payments and more.)</li>
+                </ol>
+                <h4></h4>
+                <ol class="learned-skills">
+                    <li>-Built report API’s for invoices to allow a prime contractor to track invoices across multiple projects</li>
+                    <li>-Built internal tooling API’s and Vue pages for project monitoring and analytics.</li>
+                    <li>-Worked to update libraries such as Bootstrap 3 to 4. </li>
+                    <li>-Developed automated check creation with robust management and monitoring cutting the delivery date of checks in half.</li>
+                </ol>
+            </div>
+        </div>
+        <h1 id="heading">Projects</h1>  
+            <div class="skills test">
+                <div class="goal-tracker-image">
+                        <a href="https://goal-tracker.killiandebacker.com/" target="_blank"><img src="images/final.jpg" alt=""></a>
+                </div>
+                <div class="educationInfo educationItem">
+                    <h2>Goal-Tracker website and API</h2>
+                    <a class="b" href="https://github.com/Killian264/Goal-Tracker-Website" target="_blank"><i class="fas fa-code-branch"></i><span>  View Source</span></a>
+                    <a class="b" href="https://goal-tracker.killiandebacker.com/" target="_blank"><i class="fas fa-desktop"></i> <span> Live Preview </span></a>
+                    <br/>
+                    <ol class="learned-skills">
+                        <li class="font">A website that tracks a user's goals and plans.</li>
+                    </ol>
+                    <h4>Languages Used:</h4>
+                    <!-- using b here is bad practice  -->
+                    <ol class="learned-skills">
+                        <li><strong>Front-end:</strong> HTML, CSS, JS, React</li>
+                        <li><strong>Back-end:</strong> C#, .NET, SQL / T-SQL</li>
+                    </ol>
+                    <h4>Features:</h4>
+                    <ol class="learned-skills">
+                        <li>User registration and login.</li>
+                        <li>Ability to create, maintain, complete, and delete goals.</li>
+                        <!-- <li>Detailed sorting customization.</li> -->
+                        <li>Multiple pages and views, ability to switch without reloading.</li>
+                    </ol>
+                    <h4>Technical Information</h4>
+                    <ol class="learned-skills">
+                        <a class="b" href="https://github.com/Killian264/Goal-Tracker-Website" target="_blank"><i class="fas fa-code-branch"></i><span>  See GitHub for more information on implementation and design decisions.</span></a>
+                    </ol>
+                </div>
+            </div>
+        <div class="projects">      
+            <div class="portfolio">
+                <h2>PyMusic</h2>
+                  <a href="https://github.com/Killian264/PyMusic" target="_blank"><img src="Images/PyMusic.jpg" ><i class="fas fa-code-branch"></i><span>  View Source </span></a>
+                <div class="technologies">
+                    <h4>Technologies Used</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-dot-circle"></i>
+                            <span>Python</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-dot-circle"></i>
+                            <span>PyQT</span> <br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="portfolioInfo">
+                    <div class="infoText">
+                        <h4>Overview</h4>
+                        <span>A desktop MP3 player made in Python using PyQT.</span>
+                    </div>
+                    <div class="notableFeatures">
+                        <h4>Notable Features</h4>
+                        <i class="fas fa-dot-circle"></i>
+                        <span>Ability to add and manage songs.</span><br>
+                        <i class="fas fa-dot-circle"></i>
+                        <span>Fluid design for resizing.</span><br>
+                        <i class="fas fa-dot-circle"></i>
+                        <span>Currently a work in progress.</span><br>
+                    </div>
+                </div>
+            </div>
+        <div class="portfolio">
+            <h2>Tetris</h2>
+             <a href="https://github.com/Killian264/Tetris-in-Python" target="_blank"><img src="images\Pythontetris.jpg" ><i class="fas fa-code-branch"></i><span>  View Source</span></a>
+
+            <div class="technologies">
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>
+                            <i class="fas fa-dot-circle"></i>
+                            <span>Python </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="portfolioInfo">
+                <div class="infoText">
+                    <h4>Overview</h4>
+                    <span>Tetris made using python's pygame library.</span>
+                </div>
+                <div class="notableFeatures">
+                    <h4>Notable Features</h4>
+                    <i class="fas fa-dot-circle"></i>
+                    <span>Fluid movement and gameplay with no latency.</span><br>
+                    <i class="fas fa-dot-circle"></i>
+                    <span>Use of colors and shadows for a 3d shape to blocks.</span><br>
+                    <i class="fas fa-dot-circle"></i>
+                    <span>Simple user interface and mechanics.</span><br>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio">
+            <h2>Discord Bot</h2>
+             <a href="https://github.com/Killian264/Discord-Bot" target="_blank"><img src="images\DiscordBotImg.PNG" ><i class="fas fa-code-branch"></i><span>  View Source</span></a>
+
+            <div class="technologies">
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>
+                            <i class="fas fa-dot-circle"></i>
+                            <span>C# </span>
+                    </li>
+                    <li>
+                        <i class="fas fa-dot-circle"></i>
+                        <span>.NET </span> <br>
+                    </li>
+                </ul>
+            </div>
+            <div class="portfolioInfo">
+                <div class="infoText">
+                    <h4>Overview</h4>
+                    <span>A Discord bot made with C# and .NET using Discord.net a Discord API wrapper.</span>
+                </div>
+                <div class="notableFeatures">
+                    <h4>Notable Features</h4>
+                    <i class="fas fa-dot-circle"></i>
+                    <span>Fully asynchronous command handler</span><br>
+                    <i class="fas fa-dot-circle"></i>
+                    <span>Use of multiple API's.</span><br>
+                    <i class="fas fa-dot-circle"></i>
+                    <span>Detailed config.json and config.cs for user configuration.</span><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="about" id="about">
+        <div class="skills test">
+            <div class="educationItem">
+                <img src="images/csharp.png" alt="">
+            </div>
+            <div class="educationInfo educationItem">
+                <h2>Programming Languages and Technologies</h2>
+                <h4>Programming Languages</h4>
+                <div class="four-list">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS / SCSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>C / C++</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="three-list">
+                    <h4>Libraries/Frameworks I've Used</h4>
+                    <ul >
+                        <li>React (JS)</li>
+                        <li>Vue (JS)</li>
+                        <li>Bootstrap</li>
+                        <li>.NET (C#)</li>
+                        <li>PyQT (Python)</li>
+                        <li>Symfony (PHP)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Technologies /  Design Principals</h4>
+                    <ul>
+                        <li>MVC</li>
+                        <li>Git Bash</li>
+                        <li>RESTful</li>
+                        <li>Relational Databases</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="education test">
+            <div class="educationItem">
+                <img src="images/dsulogo.png" alt="">
+            </div>
+            <div class="educationInfo educationItem">
+                <h2>Dakota State University</h2>
+                    <h4>Computer Science - Currently Enrolled </h4>
+                    <ul><li>Academic Honors</li></ul>
+                    <ul><li>GPA: 3.54</li></ul>
+                    <h4>Some Classes I've Taken</h4>
+                    <ul>
+                        <li>Object Oriented Design</li>
+                        <li>Web Application Programming</li>
+                        <li>Systems Analysis and Design</li>
+                        <li>Data Structures</li>
+                        <li>Advanced Data Structures</li>
+                        <li>Java Programming</li>
+                        <li>Operating Systems</li>
+                        <li>Assembly Language</li>
+                        <li>Software Security</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Feel free to contact me if you're interested in working together!</h3>
+        
+        <ul class="infoLinks">
+                <li>
+                    <a href="https://www.linkedin.com/in/killian-debacker-95a813165/" target="_blank">
+                    <img src="images/GithubImage.png" id="gitHub">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/killian-debacker-95a813165/" target="_blank">
+                    <img src="images/LinkedIn-Logo-500x500.png">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://killiandebacker.com/Pages/Contact/contact" target="_blank">
+                        <img src="images/gmaillogo.png">Gmail</a>
+                </li>
+                <li>
+                    <a href="images/Killian Debacker Resume.pdf" target="_blank"> <img src="images/button.png" alt=""></a>
+                    <a href="images/Killian Debacker Resume.pdf"  target="_blank">Resume</a>
+                </li>
+            </ul>
+    </div>
 </body>
 </html>
