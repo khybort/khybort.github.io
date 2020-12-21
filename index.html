@@ -1,302 +1,910 @@
+<!-- Copyright Shubhadeep Mandal 2020 -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Templates/navDefault/navMain.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <title>Killian Debacker Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Shubhadeep Mandal</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Icon themes -->
+    <link href="css/icon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Font Awesome icons (free version)
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>-->
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script data-ad-client="ca-pub-2198930842911382" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="logo">
-            <h4>Killian Debacker</h4>
-        </div>
-        <ul class="navlinks">
-            <!-- <li><a href="#ye" class="scroll">Home</a></li> -->
-            <li><a href= "#coolprojects" class="scroll">Projects</a></li>
-            <li><a href="#about" class="scroll">Skills</a></li>
-            <li><a href="Pages/Contact/contact" >Contact Me</a></li>
-            <li><a href= "images/Killian Debacker Resume.pdf" target="_blank">Resume</a></li>
-            <div class="download">
-                <a href="images/Killian Debacker Resume.pdf" target="_blank"> <img src="../images/button.png" alt=""></a>
+
+<body id="page-top">
+    <!-- Messenger Plugin -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="1680797578671896"
+        logged_in_greeting="Hi, How can I help you?" logged_out_greeting="Hi, How can I help you?">
+    </div>
+	
+    <!-- Pinterest -->
+    <meta name="p:domain_verify" content="289b5a7d9dc7fed3f8c2990d1ed81563"/>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img src="assets/img/navlogo.svg" /></a><button class="navbar-toggler navbar-toggler-right"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#career">Career</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#abilities">Abilities</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </ul>
-        <div class = "navdropdown">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
         </div>
-        <script src="nav.js"></script>
     </nav>
-
-    <div class="main" id="setImage">
-            <h1>Killian Debacker</h1>
-            <h2>Full Stack Developer</h2>
-            <br>
-            <ul class="infoLinks">
-                <li>
-                    <a href="https://github.com/Killian264" target="_blank">
-                    <img src="images/GithubImage.png" id="gitHub">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/killian-debacker-95a813165/" target="_blank">
-                    <img src="images/LinkedIn-Logo-500x500.png">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://killiandebacker.com/Pages/Contact/contact" target="_blank">
-                    <img src="images/gmaillogo.png">Gmail</a>
-                </li>
-                <li>
-                    <a href="images/Killian Debacker Resume.pdf" target="_blank"> <img src="images/button.png" alt=""></a>
-                    <a href="images/Killian Debacker Resume.pdf"  target="_blank">Resume</a>
-                </li>
-            </ul>
-            <br>
-    </div>
-    <div class="about" id="coolprojects">
-        <h1 id="heading">Work Experience</h1>  
-        <div class="skills test">
-            <div class="skills-padding ml2">
-                    <a class="skills-image-padding" href="https://www.lmsproject.com/" target="_blank"><img src="images/lms-project-white.png" alt=""></a>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Welcome To My Website!</div>
+            <!-- <div class="masthead-heading text-uppercase">I'm Shubhadeep Mandal</div>-->
+            <div class="masthead-heading text-uppercase" id="cursorcontainer">
+                <div id="cursorcolor">I'm <div id="cursortext"></div>
+                </div>
             </div>
-            <div class="lms-project-info">
-                <h2>LMS Project</h2>
-                <span class="b">June 2020 - Current</span>
-                <br/>
-                <ol class="learned-skills">
-                    <li class="font">(A platform for construction project management, invoicing, budgeting, payments and more.)</li>
-                </ol>
-                <h4></h4>
-                <ol class="learned-skills">
-                    <li>-Built report API’s for invoices to allow a prime contractor to track invoices across multiple projects</li>
-                    <li>-Built internal tooling API’s and Vue pages for project monitoring and analytics.</li>
-                    <li>-Worked to update libraries such as Bootstrap 3 to 4. </li>
-                    <li>-Developed automated check creation with robust management and monitoring cutting the delivery date of checks in half.</li>
-                </ol>
+            <div class="wrapper ">
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i></div>
+                    <a href="https://www.facebook.com/shubhadeepmandal394" style="text-decoration: none" target="
+                        _blank"><span>Facebook</span></a>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <a href="https://twitter.com/shubhadeep394" style="text-decoration: none"
+                        target="_blank"><span>Twitter</span></a>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-instagram"></i></div>
+                    <a href="https://www.instagram.com/shubhadeepmandal394/" style="text-decoration: none"
+                        target="_blank"><span>Instagram</span></a>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-github"></i></div>
+                    <a href="https://github.com/shubhadeepmandal394" style="text-decoration: none"
+                        target="_blank"><span>Github</span></a>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-linkedin"></i></div>
+                    <a href="https://www.linkedin.com/in/shubhadeepmandal394/" style="text-decoration: none"
+                        target="_blank"><span>LinkedIn</span></a>
+                </div>
             </div>
         </div>
-        <h1 id="heading">Projects</h1>  
-            <div class="skills test">
-                <div class="goal-tracker-image">
-                        <a href="https://goal-tracker.killiandebacker.com/" target="_blank"><img src="images/final.jpg" alt=""></a>
-                </div>
-                <div class="educationInfo educationItem">
-                    <h2>Goal-Tracker website and API</h2>
-                    <a class="b" href="https://github.com/Killian264/Goal-Tracker-Website" target="_blank"><i class="fas fa-code-branch"></i><span>  View Source</span></a>
-                    <a class="b" href="https://goal-tracker.killiandebacker.com/" target="_blank"><i class="fas fa-desktop"></i> <span> Live Preview </span></a>
-                    <br/>
-                    <ol class="learned-skills">
-                        <li class="font">A website that tracks a user's goals and plans.</li>
-                    </ol>
-                    <h4>Languages Used:</h4>
-                    <!-- using b here is bad practice  -->
-                    <ol class="learned-skills">
-                        <li><strong>Front-end:</strong> HTML, CSS, JS, React</li>
-                        <li><strong>Back-end:</strong> C#, .NET, SQL / T-SQL</li>
-                    </ol>
-                    <h4>Features:</h4>
-                    <ol class="learned-skills">
-                        <li>User registration and login.</li>
-                        <li>Ability to create, maintain, complete, and delete goals.</li>
-                        <!-- <li>Detailed sorting customization.</li> -->
-                        <li>Multiple pages and views, ability to switch without reloading.</li>
-                    </ol>
-                    <h4>Technical Information</h4>
-                    <ol class="learned-skills">
-                        <a class="b" href="https://github.com/Killian264/Goal-Tracker-Website" target="_blank"><i class="fas fa-code-branch"></i><span>  See GitHub for more information on implementation and design decisions.</span></a>
-                    </ol>
-                </div>
+    </header>
+    <!-- About -->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">about</h2>
+                <h3 class="section-subheading text-muted"></h3>
             </div>
-        <div class="projects">      
-            <div class="portfolio">
-                <h2>PyMusic</h2>
-                  <a href="https://github.com/Killian264/PyMusic" target="_blank"><img src="Images/PyMusic.jpg" ><i class="fas fa-code-branch"></i><span>  View Source </span></a>
-                <div class="technologies">
-                    <h4>Technologies Used</h4>
-                    <ul>
-                        <li>
-                            <i class="fas fa-dot-circle"></i>
-                            <span>Python</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-dot-circle"></i>
-                            <span>PyQT</span> <br>
-                        </li>
-                    </ul>
-                </div>
-                <div class="portfolioInfo">
-                    <div class="infoText">
-                        <h4>Overview</h4>
-                        <span>A desktop MP3 player made in Python using PyQT.</span>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/profile/shubhadeep.jpeg" alt="" />
+                        <h4>Shubhadeep Mandal</h4>
+                        <p class="text-muted">Student at BPPIMT</p>
+                        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+                            href="https://drive.google.com/file/d/1YWACgqsc0fqKrWGWCAMmCXgArk7OfOtY/view?usp=sharing"
+                            target="_blank">Download CV</a>
                     </div>
-                    <div class="notableFeatures">
-                        <h4>Notable Features</h4>
-                        <i class="fas fa-dot-circle"></i>
-                        <span>Ability to add and manage songs.</span><br>
-                        <i class="fas fa-dot-circle"></i>
-                        <span>Fluid design for resizing.</span><br>
-                        <i class="fas fa-dot-circle"></i>
-                        <span>Currently a work in progress.</span><br>
+                </div>
+                <div class="col-lg-8">
+                    <div class="about-descr">
+                        <div class="container bg-light">
+                            <p class="p-heading">Profile: I am currently pursuing B.Tech in Electronics and
+                                Communication Engineering at B.P. Poddar Institute of Management and Technology. I am an
+                                Ethical Hacker and a Cyber Security Enthusiast, and am looking forward to build a career
+                                in it.I am also a volunteer at the United Nations Online Volunteering Services.</p>
+                            <div>Age: 20 Years</div>
+                            <div>Nationality: Indian</div>
+                            <div>Location: Kolkata, West Bengal, India</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        <div class="portfolio">
-            <h2>Tetris</h2>
-             <a href="https://github.com/Killian264/Tetris-in-Python" target="_blank"><img src="images\Pythontetris.jpg" ><i class="fas fa-code-branch"></i><span>  View Source</span></a>
+            <hr>
+        </div>
+    </section>
 
-            <div class="technologies">
-                <h4>Technologies Used</h4>
-                <ul>
-                    <li>
-                            <i class="fas fa-dot-circle"></i>
-                            <span>Python </span>
-                    </li>
-                </ul>
-            </div>
-            <div class="portfolioInfo">
-                <div class="infoText">
-                    <h4>Overview</h4>
-                    <span>Tetris made using python's pygame library.</span>
+    <!-- Career Grid-->
+    <section class="page-section  bg-light" id="career">
+        <div class="container">
+            <div class="text-center">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Career</h2>
+                    <!--<h3 class="section-subheading text-muted"></h3>-->
                 </div>
-                <div class="notableFeatures">
-                    <h4>Notable Features</h4>
-                    <i class="fas fa-dot-circle"></i>
-                    <span>Fluid movement and gameplay with no latency.</span><br>
-                    <i class="fas fa-dot-circle"></i>
-                    <span>Use of colors and shadows for a 3d shape to blocks.</span><br>
-                    <i class="fas fa-dot-circle"></i>
-                    <span>Simple user interface and mechanics.</span><br>
+                &nbsp;
+                <hr>
+                <div class="text-left">
+                    <h3 class="section-heading text-uppercase">Experience</h3>
+                    <hr>
                 </div>
-            </div>
-        </div>
-        <div class="portfolio">
-            <h2>Discord Bot</h2>
-             <a href="https://github.com/Killian264/Discord-Bot" target="_blank"><img src="images\DiscordBotImg.PNG" ><i class="fas fa-code-branch"></i><span>  View Source</span></a>
 
-            <div class="technologies">
-                <h4>Technologies Used</h4>
-                <ul>
-                    <li>
-                            <i class="fas fa-dot-circle"></i>
-                            <span>C# </span>
-                    </li>
-                    <li>
-                        <i class="fas fa-dot-circle"></i>
-                        <span>.NET </span> <br>
-                    </li>
-                </ul>
-            </div>
-            <div class="portfolioInfo">
-                <div class="infoText">
-                    <h4>Overview</h4>
-                    <span>A Discord bot made with C# and .NET using Discord.net a Discord API wrapper.</span>
+                <div class="experience">
+                    <div class="education row">
+                        <div class="col-md-4">
+                            <h4>Spotlight • Internship</h4>
+                            <p class="education-period">October 2020 - Present</p>
+                        </div>
+                        <div class="col-md-8">
+                            <strong>Software Tester</strong>
+                            <div><span class="hidden-phone">Spotlight is the world's first audit firm that leverages AI
+                                    to help businesses across the world identify, and reduce, currency conversion costs
+                                    levied by their payment providers.</span>
+                            </div>
+                            <p><span class="education-details">In this internship, I am helping Spotlight in Testing and
+                                    Securing their Web applications.</span>
+                            </p>
+                        </div>
+                        <div class="col-md-10">
+                            <p><i style='font-size:15px' class='fas'>&#xf3c5;</i> Work from Home</p>
+                        </div>
+                    </div>
+                    <div class="education row">
+                        <div class="col-md-4">
+                            <h4>Udaan • Internship</h4>
+                            <p class="education-period">June 2019 - July 2019</p>
+                        </div>
+                        <div class="col-md-8">
+                            <strong>Relationship Manager</strong>
+                            <div><span class="hidden-phone">UDAAN is a network-centric B2B trade platform, designed
+                                    specifically for small and medium businesses in India. It brings traders,
+                                    wholesalers, retailers, and manufacturers in India on to a single platform.</span>
+                            </div>
+                            <p><span class="education-details">In this internship, I helped Udaan in building a
+                                    satisfactory and lasting relationship with their 'Partner Shops'.</span>
+                            </p>
+                        </div>
+                        <div class="col-md-10">
+                            <p><i style='font-size:15px' class='fas'>&#xf3c5;</i> Work from Home</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="notableFeatures">
-                    <h4>Notable Features</h4>
-                    <i class="fas fa-dot-circle"></i>
-                    <span>Fully asynchronous command handler</span><br>
-                    <i class="fas fa-dot-circle"></i>
-                    <span>Use of multiple API's.</span><br>
-                    <i class="fas fa-dot-circle"></i>
-                    <span>Detailed config.json and config.cs for user configuration.</span><br>
+                <hr>
+                <div class="text-left">
+                    <h3 class="section-heading text-uppercase">Education</h3>
+                    <hr>
+                </div>
+
+
+                <div class="education">
+                    <div class="education row">
+                        <div class="col-md-4">
+                            <h5>B.P. Poddar Institute of Management and Technology</h5>
+                            <p class="education-period">2018 - 2022</p>
+                        </div>
+                        <div class="col-md-8">
+                            <strong>B.Tech in Electronics and Communication Engineering.</strong>
+                            <div><span class="hidden-phone"></span>As a Electronics and Communication bachelor, I am
+                                well versed in areas like Digital System Design, Microprocessors and Microcontrollers,
+                                Analog Communication and many more.</div>
+                            <div class="col-md-3"><i style='font-size:15px' class='fas'>&#xf3c5;</i> Kolkata</div>
+                        </div>
+                        &nbsp;
+                        <div class="education row">
+                            <div class="col-md-4">
+                                <h5>St. Stephen's School</h5>
+                                <p class="education-period">2016 - 2018</p>
+                            </div>
+                            <div class="col-md-8">
+                                <strong>Senior Secondary Education ( ISC ), Computer Science</strong>
+                                <div><span class="hidden-phone">I graduated high school learning Mathematics, Physics,
+                                        Chemistry, Computer, English and Hindi(2nd Language)</span></div>
+                            </div>
+                            <div class="col-md-10">
+                                <p><i style='font-size:15px' class='fas'>&#xf3c5;</i> Kolkata</p>
+                            </div>
+                        </div>
+                        &nbsp;
+                        <div class="education row">
+                            <div class="col-md-4">
+                                <h5>St. Stephen's School</h5>
+                                <p class="education-period">2012 - 2016</p>
+                            </div>
+                            <div class="col-md-8">
+                                <strong>Secondary Education ( ICSE )</strong>
+                                <div><span class="hidden-phone">I graduated middle school learning Mathematics, Physics,
+                                        Chemistry, Computer, English , History, Geography and Hindi(2nd Language)</span>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <p><i style='font-size:15px' class='fas'>&#xf3c5;</i> Kolkata</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Abilities-->
+    <section class="page-section" id="abilities">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Abilities</h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+            <hr>
+            <div class="text-left">
+                <h3 class="section-heading text-uppercase">Skills</h3>
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+
+                        <li>
+                            <span class="ability-title">C</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+
+                        </li>
+                        <li>
+                            <span class="ability-title">Public Speaking</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Python</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Leadership</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">SQL Injection</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Social Engineering</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <!--<li>
+				<span class="ability-title">xxxx</span>
+				<span class="ability-score">			
+					<span class="fa fa-star filled"></span>			
+					<span class="fa fa-star filled"></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>								
+					<span class="fa fa-star "></span>				
+				</span>
+			</li>-->
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+                        <li>
+                            <span class="ability-title">Java</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Management</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">HTML(5)</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Django</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Windows Hacking</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Reverse Engineering</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <!--<li>
+				<span class="ability-title">x</span>
+				<span class="ability-score">			
+					<span class="fa fa-star filled"></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>								
+					<span class="fa fa-star "></span>				
+				</span>
+			</li>-->
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            <div class="text-left">
+                <h3 class="section-heading text-uppercase">Tools</h3>
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+
+                        <li>
+                            <span class="ability-title">Brackets(4 Years)</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Windows(10+ Years)</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Git(2 Years)</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">VMWare Workstation Player(1 Year)</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <!--<li>
+				<span class="ability-title">xxxx</span>
+				<span class="ability-score">			
+					<span class="fa fa-star filled"></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>								
+					<span class="fa fa-star "></span>				
+				</span>
+			</li>
+            <li>
+				<span class="ability-title">xxxx</span>
+				<span class="ability-score">			
+					<span class="fa fa-star filled"></span>			
+					<span class="fa fa-star filled"></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>								
+					<span class="fa fa-star "></span>				
+				</span>
+			</li>
+            <li>
+				<span class="ability-title">xxxx</span>
+				<span class="ability-score">			
+					<span class="fa fa-star filled"></span>			
+					<span class="fa fa-star filled"></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>								
+					<span class="fa fa-star "></span>				
+				</span>
+			</li>-->
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+                        <li>
+                            <span class="ability-title">Dev C++(2 Years)</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">MS Office(10+ Years)</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">PyCharm(2 Years)</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">MATLAB(1 Year)</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                        <!--<li>
+				<span class="ability-title">xxxx</span>
+				<span class="ability-score">			
+					<span class="fa fa-star filled"></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>								
+					<span class="fa fa-star "></span>				
+				</span>
+			</li>	
+			<li>
+				<span class="ability-title">xxxx</span>
+				<span class="ability-score">			
+					<span class="fa fa-star filled"></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>								
+					<span class="fa fa-star "></span>				
+				</span>
+			</li>	
+			<li>
+				<span class="ability-title">xxxx</span>
+				<span class="ability-score">			
+					<span class="fa fa-star filled"></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>			
+					<span class="fa fa-star "></span>								
+					<span class="fa fa-star "></span>				
+				</span>
+			</li>-->
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            <div class="text-left">
+                <h3 class="section-heading text-uppercase">Languages Known</h3>
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+
+                        <li>
+                            <span class="ability-title">English</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">Bengali</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="no-bullets">
+                        <li>
+                            <span class="ability-title">Hindi</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="ability-title">French</span>
+                            <span class="ability-score">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                            </span>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <hr>
+        </div>
+
+    </section>
+
+    <!-- Projects Grid-->
+    <section class="page-section  bg-light" id="projects">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Projects</h2>
+                &nbsp;
+                <hr>
+                &nbsp;
+                <!--<h3 class="section-subheading text-muted"></h3>-->
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="projects-item">
+                        <a class="projects-link" data-toggle="modal" href="#projectsModal1">
+                            <div class="projects-hover">
+                                <div class="projects-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/projects/circuit.jpg" alt="" />
+                        </a>
+                        <div class="projects-caption">
+                            <div class="projects-caption-subheading">Remote Temperature Monitoring</div>
+                            <!--<div class="projects-caption-subheading text-muted">Short Description</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="projects-item">
+                        <a class="projects-link" data-toggle="modal" href="#projectsModal2">
+                            <div class="projects-hover">
+                                <div class="projects-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/projects/authentication.jpg" alt="" width="2048"
+                                height="1229" />
+                        </a>
+                        <div class="projects-caption">
+                            <div class="projects-caption-subheading">Vehicle Authentication Technology</div>
+                            <!--<div class="projects-caption-subheading text-muted">Short Description</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="projects-item">
+                        <a class="projects-link" data-toggle="modal" href="#projectsModal3">
+                            <div class="projects-hover">
+                                <div class="projects-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/projects/project.jpg" alt="" />
+                        </a>
+                        <div class="projects-caption">
+                            <div class="projects-caption-subheading">(Project In Progress)</div>
+                            <!--<div class="projects-caption-subheading text-muted">Short Description</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </section>
+
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contact Me</h2>
+                <hr>
+
+                <div class="iconwrapper ">
+                    <div class="button">
+                        <div class="icon">
+                            <a href="https://discord.gg/msJGJ9q" target="_blank"><i class="fab fa-discord"
+                                    title="Discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <a href="https://join.skype.com/invite/j9tud1dREYHs" target="_blank"><i class="fab fa-skype"
+                                    title="Skype"></i></a>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <a href="https://t.me/shubhadeepmandal394" style="text-decoration: none" target="_blank"><i
+                                    class="fab fa-telegram" title="Telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <a href="https://wa.me/919477451976" style="text-decoration: none" target="_blank"><i
+                                    class="fab fa-whatsapp" title="WhatsApp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" id="contactForm">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" name="name" id="name" type="text" placeholder="Your Name *"
+                                required="required" data-validation-required-message="Please enter your name." />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" name="email" id="email" type="email" placeholder="Your Email *"
+                                required="required"
+                                data-validation-required-message="Please enter your email address." />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <input class="form-control" name="phone number" id="phone" type="tel"
+                                placeholder="Your Phone *" required="required"
+                                data-validation-required-message="Please enter your phone number." />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <textarea class="form-control" name="message" id="message" placeholder="Your Message *"
+                                required="required"
+                                data-validation-required-message="Please enter a message."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group form-group-textarea mb-md-1">
+                            <div class="text-center">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="text-center">Copyright © Shubhadeep Mandal 2020</div>
+        </div>
+    </footer>
+    <!-- projects Modals-->
+    <!-- Modal 1-->
+    <div class="projects-modal modal fade" id="projectsModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Remote Temperature Monitoring</h2>
+                                <p class="item-intro text-muted">Sending an alert on Telegram when temperature crosses a
+                                    certain threshold</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/projects/circuit.jpg" width="560"
+                                    height="315" alt="" />
+                                <p>It remotely allows you to track the Temperature of any particular
+                                    location/place/object and sends you an alert message over Telegram as soon as
+                                    temperature crosses a certain threshold.</p>
+                                <ul class="list-inline">
+                                    <li>Duration: March 2020 - April 2020</li>
+                                    <li>Project Link: <a href="https://bit.ly/30fHSIL">View Project</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    <div class="about" id="about">
-        <div class="skills test">
-            <div class="educationItem">
-                <img src="images/csharp.png" alt="">
-            </div>
-            <div class="educationInfo educationItem">
-                <h2>Programming Languages and Technologies</h2>
-                <h4>Programming Languages</h4>
-                <div class="four-list">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS / SCSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>C#</li>
-                        <li>C / C++</li>
-                        <li>PHP</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="three-list">
-                    <h4>Libraries/Frameworks I've Used</h4>
-                    <ul >
-                        <li>React (JS)</li>
-                        <li>Vue (JS)</li>
-                        <li>Bootstrap</li>
-                        <li>.NET (C#)</li>
-                        <li>PyQT (Python)</li>
-                        <li>Symfony (PHP)</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Technologies /  Design Principals</h4>
-                    <ul>
-                        <li>MVC</li>
-                        <li>Git Bash</li>
-                        <li>RESTful</li>
-                        <li>Relational Databases</li>
-                    </ul>
+    <!-- Modal 2-->
+    <div class="projects-modal modal fade" id="projectsModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Vehicle Authentication Technology</h2>
+                                <p class="item-intro text-muted">This Technology helps the Security Personnel of any
+                                    residential societies, business complex, parking spaces, or any real estate
+                                    buildings in the detection, identification, and monitoring of vehicles
+                                    entering/leaving the premises by using image processing of the license plate numbers
+                                    of the vehicles using our android application and matching the same with the
+                                    database.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/qkdzNRpi05E"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                                <p>The idea is a simple website that is used by the authorities to register residents'
+                                    names, addresses, phone numbers, vehicle models, and license plate numbers which are
+                                    then saved in the server database. The website is also used for registering a new
+                                    vehicle in the residential complex. An Android app used in the entry point to scan
+                                    the number plates of the cars entering the premises and these scanned numbers are
+                                    matched with the database. A successful match signifies the vehicle is known and
+                                    belongs to the complex. On the other hand, an unsuccessful match will signify the
+                                    car doesn't belong to anyone in the complex.</p>
+                                <ul class="list-inline">
+                                    <li>Duration: May 2020 - June 2020</li>
+                                    <li>Project Link: <a href="https://bit.ly/312ZlTX">View Project</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="education test">
-            <div class="educationItem">
-                <img src="images/dsulogo.png" alt="">
-            </div>
-            <div class="educationInfo educationItem">
-                <h2>Dakota State University</h2>
-                    <h4>Computer Science - Currently Enrolled </h4>
-                    <ul><li>Academic Honors</li></ul>
-                    <ul><li>GPA: 3.54</li></ul>
-                    <h4>Some Classes I've Taken</h4>
-                    <ul>
-                        <li>Object Oriented Design</li>
-                        <li>Web Application Programming</li>
-                        <li>Systems Analysis and Design</li>
-                        <li>Data Structures</li>
-                        <li>Advanced Data Structures</li>
-                        <li>Java Programming</li>
-                        <li>Operating Systems</li>
-                        <li>Assembly Language</li>
-                        <li>Software Security</li>
-                    </ul>
+    </div>
+    <!-- Modal 3-->
+    <div class="projects-modal modal fade" id="projectsModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">In Progress</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/projects/project.jpg" alt="" />
+                                <p>Project Description</p>
+                                <ul class="list-inline">
+                                    <li>Duration: </li>
+                                    <li>Project Link: <a href="">View Project</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <h3>Feel free to contact me if you're interested in working together!</h3>
-        
-        <ul class="infoLinks">
-                <li>
-                    <a href="https://www.linkedin.com/in/killian-debacker-95a813165/" target="_blank">
-                    <img src="images/GithubImage.png" id="gitHub">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/killian-debacker-95a813165/" target="_blank">
-                    <img src="images/LinkedIn-Logo-500x500.png">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://killiandebacker.com/Pages/Contact/contact" target="_blank">
-                        <img src="images/gmaillogo.png">Gmail</a>
-                </li>
-                <li>
-                    <a href="images/Killian Debacker Resume.pdf" target="_blank"> <img src="images/button.png" alt=""></a>
-                    <a href="images/Killian Debacker Resume.pdf"  target="_blank">Resume</a>
-                </li>
-            </ul>
-    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

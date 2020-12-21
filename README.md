@@ -1,14 +1,4 @@
-# Portfolio-Website
-Live Preview: https://killiandebacker.com
+## 🌐 Welcome to my Portfolio Website Repository
+[![Netlify Status](https://api.netlify.com/api/v1/badges/283a6260-c648-4ef0-9922-f17ee12f86f5/deploy-status)](https://shubhadeepmandal394.netlify.app/)
 
-# What I learned 
-
-HTML and CSS
-
-Scalable and responsive design using flexbox, grid, and media queries.
-
-Basic Javascript, Jquery, and PHP
-
-Javascript DOM manipulation 
-
-.htaccess coding
+This is my portfolio website's repository hosted on netlify.app. To visit my website [click here](https://shubhadeepmandal394.netlify.app/).
